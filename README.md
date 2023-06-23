@@ -4,12 +4,17 @@
 
 git clone https://github.com/saminov19/mailing_task.git
 
+
+
 ***Установите зависимости проекта. Убедитесь, что у вас установлен Python и pip. Из root директории проекта выполните следующую команду:***
 
 pip install -r requirements.txt
 
 
+
+
 ***Настройте базу данных. Убедитесь, что у вас установлена совместимая база данных. Обновите конфигурацию базы данных в файле настроек проекта (settings.py) с помощью подходящих учетных данных.***
+
 
 
 ***Выполните миграции базы данных для создания необходимых таблиц:***
@@ -17,9 +22,13 @@ pip install -r requirements.txt
 python manage.py migrate
 
 
+
+
 ***Загрузите начальные данные, если они доступны:***
 
 python manage.py loaddata <fixture-file>
+
+
 
 
 ***Запустите сервер разработки Django:***
@@ -27,11 +36,16 @@ python manage.py loaddata <fixture-file>
 python manage.py runserver
 
 
+
+
 ***Проект теперь запущен. Обратитесь к конечным точкам API по базовому URL: http://localhost:8000/api/***
+
 
 
 **Документация API**
 Ниже документированы endpoints API с использованием формата OpenAPI:
+
+
 
 Клиенты
 POST /api/clients/: Создать нового клиента.
